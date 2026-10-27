@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Unggul Prima Dhani | Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f172a'/%3E%3Ctext x='50' y='55' font-family='monospace' font-size='32' font-weight='bold' fill='%2338bdf8' text-anchor='middle'%3EUPD%3C/text%3E%3Ccircle cx='50' cy='75' r='7' fill='%2338bdf8'%3E%3Canimate attributeName='opacity' values='1;0;1' dur='1s' repeatCount='indefinite' /%3E%3C/circle%3E%3C/svg%3E">
+  </head>
+  <body>
+    <div id="custom-cursor"></div>
+
+    <div id="imageModal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="zoomedImage">
+    </div>
+
+    <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo"><a href="index.html">UPD.</a></div>
+          <nav>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="resume.pdf" target="_blank" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Resume</a></li>
+            </ul>
+          </nav>
+          <div class="burger"><div class="line-1"></div><div class="line-2"></div><div class="line-3"></div></div>
+        </div>
+
+        <section id="hero">
+          <div class="hero-left">
+            <h3 class="pre-title">My name is</h3>
+            <h1 class="hero-name">Unggul <span>Prima Dhani</span></h1>
+            <p>
+              Lulusan Teknik Informatika dengan pengalaman kerja langsung sebagai Operator CNC dan Quality Control (QC). Di bidang IT, saya terbiasa merancang dan membangun website menggunakan PHP dan MySQL. Sementara di lapangan, saya terlatih melakukan inspeksi kualitas produk (termasuk penggunaan mesin AOI) serta pengukuran presisi memakai Caliper dan Pin Gauge. Saya terbiasa bekerja disiplin, cepat beradaptasi, dan siap menempati posisi Web Developer, IT Support, Admin, maupun Quality Control.
+            </p>
+            <div class="hero-buttons">
+              <a href="resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
+              <a href="#projects" class="btn-primary btn-outline">Lihat Proyek Saya</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="images/portfolios/pasfoto.png" alt="Foto Unggul Prima Dhani" class="profile-img zoomable">
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <section id="experience" style="padding: var(--sectionPadding); background-color: #ffffff;">
+      <div class="main-container">
+        <h3 class="pre-title">My Journey</h3>
+        <h1 class="section-title">Work Experience</h1>
+        <div class="grid-2-company">
+          <a href="pekerjaan/dawee.html" class="company-card dawee-card">
+            <div class="company-logo-wrapper"><img src="images/portfolios/dawee.jpg" alt="PT Dawee CNC Logo" class="company-logo" /></div>
+            <div class="company-info">
+              <h4>PT Dawee CNC</h4>
+              <p>Machine Operator & Quality Control</p>
+              <span class="view-detail-label">Lihat Detail <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="pekerjaan/grab.html" class="company-card grab-card">
+            <div class="company-logo-wrapper"><img src="images/portfolios/grab.png" alt="Grab Indonesia Logo" class="company-logo" /></div>
+            <div class="company-info">
+              <h4>Grab Indonesia</h4>
+              <p>Mitra Pengemudi</p>
+              <span class="view-detail-label">Lihat Detail <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="padding: var(--sectionPadding); background-color: var(--secondaryBackgroundColor);">
+      <div class="main-container">
+        <h3 class="pre-title">My Works</h3>
+        <h1 class="section-title">Featured Projects</h1>
+        
+        <div class="grid-2-company projects-grid">
+          
+          <!-- Proyek 1: Dawee (NAVY) -->
+          <a href="proyek/Monitoring_DrillBit_Dawee/detail-drillbit.html" class="company-card project-card dawee-card" style="border-color: #1e3a8a;">
+            <div class="project-img-container" style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);">
+              <img src="proyek/Monitoring_DrillBit_Dawee/gambar/dashboard.png" alt="Dashboard Drill Bit">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <img src="images/portfolios/dawee.jpg" alt="Logo Dawee" class="project-logo" style="border: 2px solid #1e3a8a;">
+                <h4 class="project-title">Sistem Monitoring Drill Bit</h4>
+              </div>
+              <p class="project-desc">Sistem informasi inventaris berbasis web untuk memonitor stok dan siklus hidup <i>drill bit</i> secara <i>real-time</i> di PT Dawee CNC.</p>
+              <div class="project-tags">
+                <span class="tag" style="background-color: #1e3a8a;">PHP</span>
+                <span class="tag" style="background-color: #1e3a8a;">MySQL</span>
+                <span class="tag" style="background-color: #1e3a8a;">UML</span>
+              </div>
+              <span class="view-detail-label" style="color: #1e3a8a;">View Project Details &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Proyek 2: TRIFLOW (HIJAU-BIRU) -->
+          <a href="proyek/triflow/detail-triflow.html" class="company-card project-card triflow-card" style="border-color: #059669;">
+            <div class="project-img-container" style="background: linear-gradient(135deg, #059669 0%, #0284c7 100%);">
+              <img src="proyek/triflow/gambar/Dashboard1.png" alt="Dashboard Triflow">
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <img src="proyek/triflow/gambar/PROFIL_TRIFLOW.jpeg" alt="Logo Triflow" class="project-logo" style="object-fit: cover; border: 2px solid #059669;">
+                <h4 class="project-title">TRIFLOW - Platform Edukasi</h4>
+              </div>
+              <p class="project-desc">Platform edukasi trading Forex & Crypto berbasis web yang menyediakan video, artikel, dan galeri untuk member.</p>
+              <div class="project-tags">
+                <span class="tag" style="background-color: #059669;">Web Dev</span>
+                <span class="tag" style="background-color: #059669;">UI/UX</span>
+              </div>
+              <span class="view-detail-label" style="color: #059669;">View Project Details &rarr;</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="main-footer">
+      <div class="main-container footer-content">
+        <h2>Hubungi Saya</h2>
+        <p>Jika ingin menghubungi saya, silakan hubungi kontak di bawah ini.</p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/ungguldhani/" target="_blank" class="contact-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6281949468689" target="_blank" class="contact-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:unggulprimadhan@gmail.com" class="contact-btn email" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&#169; 2026 Unggul Prima Dhani. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const customCursor = document.getElementById('custom-cursor');
+        const isMouse = window.matchMedia("(pointer: fine)").matches;
+        if (customCursor && isMouse) {
+          document.body.style.cursor = 'none';
+          const interactiveEls = document.querySelectorAll('a, button, .company-card, .zoomable');
+          interactiveEls.forEach(el => el.style.cursor = 'none');
+          customCursor.style.display = 'block';
+          let lastTrailTime = 0;
+          document.addEventListener('mousemove', (e) => {
+            requestAnimationFrame(() => {
+              customCursor.style.left = e.clientX + 'px';
+              customCursor.style.top = e.clientY + 'px';
+            });
+            const now = Date.now();
+            if (now - lastTrailTime > 30) {
+              createTrail(e.clientX, e.clientY, '#7e74f1');
+              lastTrailTime = now;
+            }
+          });
+        }
+
+        function createTrail(x, y, color) {
+          const particle = document.createElement('div');
+          particle.classList.add('trail-particle');
+          particle.style.left = x + 'px';
+          particle.style.top = y + 'px';
+          particle.style.backgroundColor = color;
+          particle.style.boxShadow = `0 0 10px ${color}`;
+          document.body.appendChild(particle);
+          setTimeout(() => { particle.remove(); }, 1000);
+        }
+
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("zoomedImage");
+        const closeBtn = document.querySelector(".close-modal");
+        const images = document.querySelectorAll(".zoomable");
+
+        images.forEach(img => {
+          img.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            if (customCursor) customCursor.style.display = "none";
+            document.body.style.cursor = "zoom-out";
+          });
+        });
+
+        closeBtn.addEventListener("click", function() {
+          modal.style.display = "none";
+          if (customCursor && isMouse) {
+            customCursor.style.display = "block";
+            document.body.style.cursor = "none";
+          }
+        });
+
+        modal.addEventListener("click", function(e) {
+          if (e.target === modal) {
+            modal.style.display = "none";
+            if (customCursor && isMouse) {
+              customCursor.style.display = "block";
+              document.body.style.cursor = "none";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
